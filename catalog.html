@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог автомобильных запчастей магазина DriveParts.">
+    <title>DriveParts — Каталог автозапчастей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bg-dark text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo d-flex align-items-center">
+            <a href="index.html" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="fs-2 me-2 rotate-360-icon">⚙️</span>
+                <h1 class="h3 mb-0">DriveParts</h1>
+            </a>
+        </div>
+        <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Главная</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link text-white active fw-bold">Каталог</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link text-white">Доставка</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link text-white">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container py-5">
+    <h2 class="mb-4">Каталог автотоваров</h2>
+    <div class="row g-4">
+        <!-- Товар 1 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm product-card">
+                <img src="https://images.unsplash.com/photo-1600705722908-bab1e61c0b4d?w=400" class="card-img-top zoom-hover" alt="Масло 5W-40">
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h6 card-title">Моторное масло 5W-40 (4л)</h3>
+                    <p class="text-muted small">Синтетическое, для бензиновых и дизельных ДВС</p>
+                    <div class="mt-auto">
+                        <span class="fs-5 fw-bold text-primary">3 450 ₽</span>
+                        <button class="btn btn-primary w-100 mt-2">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Товар 2 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm product-card">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400" class="card-img-top zoom-hover" alt="Литой диск">
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h6 card-title">Литой колесный диск R17</h3>
+                    <p class="text-muted small">Легкосплавный, черный глянец</p>
+                    <div class="mt-auto">
+                        <span class="fs-5 fw-bold text-primary">8 900 ₽</span>
+                        <button class="btn btn-primary w-100 mt-2">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Товар 3 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm product-card">
+                <div class="text-center pt-4 pb-2 bg-light">
+                    <div class="flip-180-icon display-1">🔋</div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h6 card-title">Аккумулятор 60 А·ч 12V</h3>
+                    <p class="text-muted small">Пусковой ток 540A, обратная полярность</p>
+                    <div class="mt-auto">
+                        <span class="fs-5 fw-bold text-primary">6 200 ₽</span>
+                        <button class="btn btn-primary w-100 mt-2">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Товар 4 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm product-card">
+                <div class="text-center pt-4 pb-2 bg-light">
+                    <div class="flip-180-icon display-1">🧰</div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h6 card-title">Набор автоинструментов 82 предм.</h3>
+                    <p class="text-muted small">Хром-ванадиевая сталь, кейс</p>
+                    <div class="mt-auto">
+                        <span class="fs-5 fw-bold text-primary">5 500 ₽</span>
+                        <button class="btn btn-primary w-100 mt-2">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2026 DriveParts. Лабораторная работа №2.</p>
+</footer>
+
+</body>
+</html>
