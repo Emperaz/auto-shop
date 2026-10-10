@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- SEO: Правильный Viewport для адаптивности -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Описание для поисковиков (Lighthouse требует это для 100 баллов) -->
+    <meta name="description" content="Автомагазин DriveParts. Оригинальные запчасти, масла и аксессуары для вашего автомобиля по лучшим ценам.">
+    <!-- SEO: Ключевые слова -->
+    <meta name="keywords" content="автозапчасти, моторное масло, шины, аккумуляторы, автомагазин">
+
+    <title>DriveParts — Магазин автозапчастей</title>
+
+    <!-- Подключение Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение наших кастомных стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка (header) -->
+<header class="bg-dark text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo d-flex align-items-center">
+            <!-- Элемент для демонстрации поворота на 360 градусов -->
+            <span class="fs-2 me-2 rotate-360-icon">⚙️</span>
+            <h1 class="h3 mb-0">DriveParts</h1>
+        </div>
+        <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-white">Каталог</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Доставка</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Кнопка мобильного меню (Bootstrap) -->
+        <button class="btn btn-outline-light d-md-none" aria-label="Открыть меню">☰</button>
+    </div>
+</header>
+
+<!-- Главный контент -->
+<main>
+    <!-- Баннер -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h2 class="display-4 fw-bold">Всё для вашего авто</h2>
+            <p class="lead">Более 100 000 запчастей в наличии. Быстрая доставка.</p>
+            <a href="#catalog" class="btn btn-warning btn-lg mt-3">Перейти в каталог</a>
+        </div>
+    </section>
+
+    <!-- Каталог товаров (Демонстрация трансформации: увеличение масштаба) -->
+    <section id="catalog" class="container py-5">
+        <h2 class="text-center mb-5">Популярные категории</h2>
+        <div class="row g-4">
+
+            <!-- Карточка 1 -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product-card">
+                    <div class="overflow-hidden">
+                        <!-- SEO: атрибут alt обязателен -->
+                        <img src="https://images.unsplash.com/photo-1600705722908-bab1e61c0b4d?w=400" class="card-img-top zoom-hover" alt="Моторные масла">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 card-title">Моторные масла</h3>
+                        <button class="btn btn-outline-primary">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product-card">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400" class="card-img-top zoom-hover" alt="Литые диски">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 card-title">Диски и шины</h3>
+                        <button class="btn btn-outline-primary">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 (Поворот на 180 градусов при наведении) -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product-card">
+                    <div class="overflow-hidden text-center pt-4 pb-2 bg-light">
+                        <!-- Иконка, которая будет вращаться -->
+                        <div class="flip-180-icon display-1">🔋</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 card-title">Аккумуляторы</h3>
+                        <button class="btn btn-outline-primary">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 shadow-sm product-card">
+                    <div class="overflow-hidden text-center pt-4 pb-2 bg-light">
+                        <div class="flip-180-icon display-1">🧰</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="h5 card-title">Инструменты</h3>
+                        <button class="btn btn-outline-primary">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Форма обратной связи с валидацией HTML5 -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="text-center mb-4">Оставить заявку на подбор запчасти</h2>
+                    <form action="#" class="bg-white p-4 shadow-sm rounded form-validation">
+                        <!-- Имя: обязательное, только буквы -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Ваше имя *</label>
+                            <input type="text" class="form-control" id="userName" required pattern="^[А-Яа-яЁёA-Za-z\s]+$" placeholder="Иван">
+                        </div>
+                        <!-- VIN код автомобиля: ровно 17 символов -->
+                        <div class="mb-3">
+                            <label for="vinCode" class="form-label">VIN-код авто *</label>
+                            <input type="text" class="form-control" id="vinCode" required minlength="17" maxlength="17" placeholder="17 символов">
+                        </div>
+                        <!-- Телефон: проверка формата -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон *</label>
+                            <input type="tel" class="form-control" id="phone" required pattern="^\+?[0-9\-\(\)\s]+$" placeholder="+7 (900) 000-00-00">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Подвал (Footer) -->
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Автомагазин DriveParts. Лабораторная работа №2.</p>
+    </div>
+</footer>
+
+</body>
+</html>
